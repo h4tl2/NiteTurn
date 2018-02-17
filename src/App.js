@@ -31,15 +31,15 @@ class App extends Component {
           <div>
             <div className="App-header"  
               style={{ 
-                fontSize: '48px', 
+                // fontSize: '48px', 
                 textAlign: 'center',
                 paddingTop: '36px', 
-                backgroundColor: 'white',
-                backgroundSize: 'streth',
+                // backgroundColor: 'white',
+                // backgroundSize: 'streth',
                 color: 'black',
               }}>
-              NiteTour
-              <div style={{ fontSize: '16px'}}>- xxxxxxxxxxxx -</div>
+              
+              <img src={require('./logo.png')} style={{ width: '50%' }}/>
             </div>
 
             <div className="w3-card-4" style={{ width: '90%', margin: '16px' }} onClick={() => { window.location.assign('/list') }}>
@@ -47,7 +47,7 @@ class App extends Component {
                     <h4>{'Find some place'}</h4>
                 </header>
                 <div className="w3-container" style={{ backgroundColor: 'white'}}>
-                    You can search and chakwow
+                    You can search and ....
                     <img style={{width: '100%'}} src="http://img2.10bestmedia.com/Images/Photos/125095/p-congo-bar-nightlife_54_990x660_201405312051.jpg" />
                     <hr />
                     <p style={{ textAlign: 'center' }} >{'GO'} <span className="glyphicon glyphicon-menu-right"></span></p>
