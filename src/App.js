@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import Detail from './detail';
 import FindFriend from './findFriend';
 import List from './list';
+import FindPic from './findPic'
+
 import logo from './logo.svg';
 
 class App extends Component {
@@ -51,6 +53,17 @@ class App extends Component {
                     <p style={{ textAlign: 'center' }} >{'Go'}</p>
                 </div>
             </div>
+
+            <div className="w3-card-4" style={{ width: '90%', margin: '16px' }} onClick={() => { window.location.assign('/pic') }}>
+                <header className="w3-container w3-light-grey">
+                    <h3>{'Find your picture in the event '}</h3>
+                </header>
+                <div className="w3-container">
+                    You can find your sexy-bitch picture.
+                    <hr />
+                    <p style={{ textAlign: 'center' }} >{'Go'}</p>
+                </div>
+            </div>
           </div>
         }
         {
@@ -61,6 +74,9 @@ class App extends Component {
         }
         {
           window.location.pathname.startsWith('/find') && <FindFriend />
+        }
+        {
+          window.location.pathname.startsWith('/pic') && <FindPic />
         }
       </div>
     );
