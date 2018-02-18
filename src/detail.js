@@ -17,7 +17,7 @@ class List extends Component {
       <div>
         <div style={{ padding: '16px 32px 16px 24px', textAlign: 'Left !important', fontSize: '28px', backgroundColor: '#44225e', color: 'white'}}>
             <span className="glyphicon glyphicon-chevron-left" style={{paddingRight: '16px'}} onClick={this.onBackClick}></span>
-            <h1 className="App-title" style={{ display: 'inline' }}>     
+            <h1 className="App-title" style={{ display: 'inline',fontFamily: 'Gill Sans' }}>     
                 {this.props.location.name}
             </h1>
         </div>

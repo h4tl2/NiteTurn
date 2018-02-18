@@ -11,11 +11,11 @@ class List extends Component {
         this.state = {
             list: [
                 {
-                    name: 'Dirty',
-                    describe: 'something',
+                    name: 'DEMO',
+                    describe: 'Arena 10, Thonglor Soi 10, Sukhumvit, 10110 Bangkok Tel.085-250-2000',
                 }, {
-                    name: 'Brick',
-                    describe: 'something',
+                    name: 'ONYX',
+                    describe: 'Soi Soonvijai, Rama 9 Road, 10310 Bangkok Tel.081-645-1188',
                 }
             ],
         }
@@ -32,7 +32,7 @@ class List extends Component {
       <div style={{  margin: '0px',backgroundColor:'white'}}>
         <div style={{color: 'green', textAlign:'left', fontSize: '20px', padding: '10px 0 0 10px'}} onClick={this.onBackClick}>{"< Back"}</div>
         <div style={{ padding: '16px 32px 8px 20px', textAlign: 'left !important', fontSize: '28px' }}>
-            <h1 className="App-title" style={{fontWeight: 'bold'}}>
+            <h1 className="App-title" style={{fontWeight: 'bold',fontFamily: 'Gill Sans' }}>
                 <span className="glyphicon glyphicon-map-marker" style={{padding: '0 10px 0 0', color:'red'}}/>
                 Location
             </h1>

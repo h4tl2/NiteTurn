@@ -10,11 +10,11 @@ class List extends Component {
     return (
         <div className="w3-card-4" style={{ width: '90%', margin: '16px' }} onClick={() => this.props.onClick(this.props.id + 1)}>
             <header className="w3-container w3-light-grey">
-                <h3 style={{}}>{this.props.item.name}</h3>
+                <h3 style={{fontFamily: 'Gill Sans' }}>{this.props.item.name}</h3>
             </header>
             <div className="w3-container" style={{ padding: '8px', backgroundColor: 'white' }}>
                 <img src={myImg} alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
-                <p>{this.props.item.describe}</p>
+                <p stype={{fontFamily: 'Gill Sans' }}>{this.props.item.describe}</p>
             </div>
         </div>
     );
