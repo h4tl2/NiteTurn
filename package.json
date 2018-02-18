@@ -6,11 +6,8 @@
     "axios": "^0.17.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-<<<<<<< HEAD
-    "react-scripts": "1.1.1"
-=======
+    "react-scripts": "1.1.1",
     "react-select": "^1.2.1"
->>>>>>> 5646ca1f50da14426a6708ffd6c6a7c00962293c
   },
   "devDependencies": {
     "react-scripts": "1.1.1"
