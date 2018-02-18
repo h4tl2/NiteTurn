@@ -20,15 +20,22 @@ class List extends Component {
             ],
         }
     }
+    onBackClick(num) {
+        window.location.assign(`/`)
+    }
 
     onLocationClick(num) {
         window.location.assign(`detail/${num}`)
     }
   render() {
     return (
-      <div>
-        <div style={{ margin: '32px', textAlign: 'Left !important', fontSize: '28px' }}>
-            <h1 className="App-title">Location</h1>
+      <div style={{  margin: '0px',backgroundColor:'white'}}>
+        <div style={{color: 'green', textAlign:'left', fontSize: '20px', padding: '10px 0 0 10px'}} onClick={this.onBackClick}>{"< Back"}</div>
+        <div style={{ padding: '16px 32px 8px 20px', textAlign: 'left !important', fontSize: '28px' }}>
+            <h1 className="App-title" style={{fontWeight: 'bold'}}>
+                <span className="glyphicon glyphicon-map-marker" style={{padding: '0 10px 0 0', color:'red'}}/>
+                Location
+            </h1>
         </div>
         {this.state.list.map((item, idx) => <Item id={idx} item={item} onClick={this.onLocationClick} />)}
       </div>
